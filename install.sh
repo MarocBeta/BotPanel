@@ -23,8 +23,8 @@ echo -e "            \033[91;1mPERMISSION DENIED !\033[0m"
 echo -e "   \033[0;33mYour VPS\033[0m $MYIP \033[0;33mHas been Banned\033[0m"
 echo -e "     \033[0;33mBuy access permissions for scripts\033[0m"
 echo -e "             \033[0;33mContact Admin :\033[0m"
-echo -e "      \033[2;32mWhatsApp:\033[0m wa.me/6285225416745"
-echo -e "      \033[2;32mTelegram:\033[0m t.me/RidwanzSaputra"
+echo -e "      \033[2;32mWhatsApp:\033[0m wa.me/212608607325"
+echo -e "      \033[2;32mTelegram:\033[0m t.me/MarocBeta"
 echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 exit 0
 fi
@@ -55,13 +55,13 @@ fi
 apt update && apt upgrade -y
 apt install python3-telethon -y >/dev/null 2>&1
 apt install unzip cron at p7zip-full >/dev/null 2>&1
-wget -q https://github.com/RidwanzAnphelibelll/BotPanel/archive/refs/heads/main.zip -O /tmp/BotPanel.zip
+wget -q https://github.com/MarocBeta/BotPanel/archive/refs/heads/main.zip -O /tmp/BotPanel.zip
 unzip /tmp/BotPanel.zip -d /usr/bin
 rm -rf /tmp/BotPanel.zip
 mv /usr/bin/BotPanel-main /usr/bin/BotPanel
 pip3 install --break-system-packages -r /usr/bin/BotPanel/requirements.txt
 cd /usr/bin/BotPanel/modules
-7z x -p@kbmnglntr45 modules.zip > /dev/null 2>&1
+7z x -p@Pexoke21free modules.zip > /dev/null 2>&1
 mv /usr/bin/BotPanel/modules/modules/* /usr/bin/BotPanel/modules
 rm -r /usr/bin/BotPanel/modules/modules
 rm -rf modules.zip
@@ -92,7 +92,7 @@ sleep 5
 
 cat > /etc/systemd/system/BotPanel.service << END
 [Unit]
-Description=BotPanel - By @RidwanzSaputra
+Description=BotPanel - By @MarocBeta
 After=network.target
 [Service]
 Type=simple
